@@ -30,13 +30,13 @@ variable "tags" {
 }
 
 variable "app_service_plan_sku" {
-  description = "SKU for app service plan"
+  description = "SKU name for service plan (e.g., B1, P1v2, S1)"
   type        = string
   default     = "B1"
 }
 
-variable "app_service_plan_kind" {
-  description = "Kind for app service plan"
+variable "app_service_plan_os_type" {
+  description = "OS type for service plan (Linux or Windows)"
   type        = string
   default     = "Linux"
 }
